@@ -1,0 +1,10 @@
+div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.swatch {
+    width: 100px;
+    height: 100px;
+    background-Color: blue;
+}

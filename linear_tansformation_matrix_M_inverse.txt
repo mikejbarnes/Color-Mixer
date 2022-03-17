@@ -1,0 +1,4 @@
+Conversion between tristimulus values, XYZ, and linear rgb, referenced to D65 illuminant
+3.243063328	-1.538376194	-0.49893282
+-0.968963091	1.875424508	0.041543029
+0.055683923	-0.204174384	1.057994536
