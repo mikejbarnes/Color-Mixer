@@ -1,8 +1,8 @@
 let colorA = getRandomColor();
 let colorB = getRandomColor();
 
-let amountA = getRandom(1,20);
-let amountB = getRandom(1,20);
+let amountA = getRandom(5,20);
+let amountB = getRandom(5,20);
 
 let sRGB_A = new Matrix(colorA, 3, 1, "values");
 let sRGB_B = new Matrix(colorB, 3, 1, "values");
@@ -46,7 +46,7 @@ parent.appendChild(swatchC);
 console.log(document.getElementById("swatchA"));
 
 function getRandom(min, max) {
-    return Int(Math.random() * (max-min) + min);
+    return parseInt(Math.random() * (max-min) + min);
 }
 
 function getRandomColor() {
