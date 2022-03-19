@@ -1,8 +1,8 @@
-let colorA = [250,250,250];
-let colorB = [150,100,50];
+let colorA = getRandomColor();
+let colorB = getRandomColor();
 
-let amountA = 15;
-let amountB = 5;
+let amountA = getRandom(1,20);
+let amountB = getRandom(1,20);
 
 let sRGB_A = new Matrix(colorA, 3, 1, "values");
 let sRGB_B = new Matrix(colorB, 3, 1, "values");
@@ -44,4 +44,16 @@ swatchC.style.backgroundColor = "rgb(" + colorC[0] + "," +
 parent.appendChild(swatchC);
 
 console.log(document.getElementById("swatchA"));
+
+function getRandom(min, max) {
+    return Int(Math.random() * (max-min) + min);
+}
+
+function getRandomColor() {
+    let color = [];
+    for(let i = 0; i < 3; i++) {
+        color.push(getRandom(0, 255));
+    }
+    return color;
+}
 
