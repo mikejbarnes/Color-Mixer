@@ -1,3 +1,6 @@
+let brushController = new BrushController();
+
+/*
 let colorA = getRandomColor();
 let colorB = getRandomColor();
 
@@ -57,3 +60,4 @@ function getRandomColor() {
     return color;
 }
 
+*/

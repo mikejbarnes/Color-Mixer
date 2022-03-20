@@ -1,10 +1,129 @@
-div {
+#wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
+    background-color: aqua;
 }
 
-.swatch {
-    width: 100px;
-    height: 100px;
-    background-Color: blue;
+#app {
+    width: 40em;
+    height: 45em;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: blueviolet;
 }
+
+#mixerTargetContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: blue;
+}
+
+#mixer, #target{
+    width: 50%;
+    height: 100%;
+}
+
+#mixer {
+    overflow: hidden;
+    background-color: red;
+}
+
+#target {
+    background-color: green;
+}
+
+#brushes {
+    height: 50%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    background-color: orange;
+}
+
+#paletteContainer {
+    height: 50%;
+    width: 85%;
+    background-color: yellow;
+}
+
+#palette {
+    width: 100%;
+    height: 20%;
+    background-color: brown;
+}
+
+#saved {
+    width: 100%;
+    height: 80%;
+    background-color: pink;
+}
+
+.color {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
+
+.brush {
+    border-radius: 50%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: black;
+}
+
+.selected {
+    box-shadow: 0 0 0 0.2em white;
+}
+
+#dropperWrapper {
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    transform: rotate(45deg);
+  }
+  
+  #dropperTip {
+    position: absolute;
+    top: 4.2em;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 0em 0em 0.2em 0.2em;
+    background-color: black;
+  }
+  
+  #dropperPipe {
+    position: absolute;
+    top: 2.2em;
+    width: 1em;
+    height: 2em;
+    border-radius: 0% 0% 0.5em 0.5em;
+    background-color: black;
+  }
+  
+  #dropperHilt {
+    position: absolute;
+    top: 1.4em;
+    width: 1.7em;
+    height: 0.8em;
+    border-radius: 0.2em;
+    background-color: black;
+  }
+  
+  #dropperBulb {
+    position: absolute;
+    top: 0.4em;
+    width: 1.1em;
+    height: 1.5em;
+    border-radius: 0.6em 0.6em 0em 0em; 
+    background-color: black;
+  }
