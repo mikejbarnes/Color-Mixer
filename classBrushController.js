@@ -4,10 +4,15 @@ class BrushController {
         this.createDropperIcon();
     }
     brushSizes = [5, 3, 2, 1.2];
+    currentSize = 0;
+    currentColor = [255,255,255];
 
     createBrushIcons() {
         for(let i = 0; i < this.brushSizes.length; i++) {
-            Utilities.createBrushIcon("brush" + i, "brushes", this.brushSizes[i], this.selectBrush.bind(this, "brush" + i));
+            Utilities.createBrushIcon(i.toString() + "brush", "brushes", this.brushSizes[i], this.selectBrush.bind(this, i.toString() + "brush"));
+            if(i == 0) {
+                document.getElementById("0brush").setAttribute("class","brush selected");
+            }
         }
     }
 
@@ -36,9 +41,10 @@ class BrushController {
 
     selectBrush(brushId) {
         for(let i = 0; i < this.brushSizes.length; i++) {
-            document.getElementById("brush" + i.toString()).setAttribute("class", "brush");
+            document.getElementById(i.toString() + "brush").setAttribute("class", "brush");
         }
 
+        this.currentSize = parseInt(brushId[0]);
         let brush = document.getElementById(brushId);
         brush.setAttribute("class", "brush selected");
     }

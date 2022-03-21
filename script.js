@@ -1,4 +1,4 @@
-let brushController = new BrushController();
+let appController = new AppController();
 
 /*
 let colorA = getRandomColor();
