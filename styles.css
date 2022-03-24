@@ -7,8 +7,8 @@
 }
 
 #app {
-    width: 40vw;
-    height: 45vw;
+    width: 600px;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -42,10 +42,9 @@
 }
 
 #mixerDab, #targetDab {
-    width: 15vw;
-    height: 15vw;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    background-color: purple;
 }
 
 #brushes {
@@ -53,8 +52,8 @@
     width: 15%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 1em;
     background-color: orange;
 }
 
@@ -113,16 +112,26 @@
     border-radius: 50%;
 }
 
+.color:hover {
+    box-shadow: 0 0 0 0.2em white;
+}
+
 .brush {
     border-radius: 50%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
     background-color: black;
+}
+
+.brush:hover {
+    box-shadow: 0 0 0 0.2em white;
 }
 
 .selected {
     box-shadow: 0 0 0 0.2em white;
     filter: drop-shadow(0 0 0.2em white);
+}
+
+.empty {
+    background-color: none;
 }
 
 #dropperWrapper {

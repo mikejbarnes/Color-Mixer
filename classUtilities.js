@@ -19,8 +19,8 @@ class Utilities {
         brush.setAttribute("id", brushId);
         brush.setAttribute("class", "brush");
         brush.addEventListener("click", method);
-        brush.style.width = size.toString() + "vw";
-        brush.style.height = size.toString() + "vw";
+        brush.style.width = size.toString() + "px";
+        brush.style.height = size.toString() + "px";
 
         parent.appendChild(brush);
     }
@@ -32,8 +32,8 @@ class Utilities {
         colorIcon.setAttribute("id", colorId);
         colorIcon.setAttribute("class", "color");
         colorIcon.addEventListener("click", method);
-        colorIcon.style.width = size.toString() + "vw";
-        colorIcon.style.height = size.toString() + "vw";
+        colorIcon.style.width = size.toString() + "px";
+        colorIcon.style.height = size.toString() + "px";
         colorIcon.style.backgroundColor = "rgb(" + color[0].toString() +
                                           ","    + color[1].toString() +
                                           ","    + color[2].toString() + ")";

@@ -1,9 +1,9 @@
 class BrushController {
     constructor() {
         this.createBrushIcons();
-        this.createDropperIcon();
+        //this.createDropperIcon();
     }
-    brushSizes = [5, 3, 2, 1.2];
+    brushSizes = [70, 50, 35, 20];
     currentSize = 0;
     currentColor = [255,255,255];
 
@@ -14,6 +14,10 @@ class BrushController {
                 document.getElementById("0brush").setAttribute("class","brush selected");
             }
         }
+    }
+
+    getBrushSize() {
+        return this.brushSizes[this.currentSize];
     }
 
     createDropperIcon() {
